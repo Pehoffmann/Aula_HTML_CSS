@@ -5,21 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Currículo Pedro Hoffmann</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
   <header>
     <h1>Programador Front End Junior</h1>
     <img src="./assets/img/foto_perfil.jpeg" alt="Minha foto de perfil" width="96" height="96">
-    <span>Pedro Balan Hoffmann</span>
-    <a href="tel:+5511995331489" target="_blank" rel="noopener noreferrer" title="Ligar para Pedro">(11) 99533-1489</a>
-    <a href="mailto:pedrob_hoffmann@outlook.com?subject=Quero%20te%20contratar&body=OI"
-      title="Enviar um email para Pedro">pedrob_hoffmann@outlook.com</a>
+    <br>
+    <div>
+      <span>Pedro Balan Hoffmann</span>
+      <a href="tel:+5511995331489" target="_blank" rel="noopener noreferrer" title="Ligar para Pedro">(11) 99533-1489</a>
+      <a href="mailto:pedrob_hoffmann@outlook.com?subject=Quero%20te%20contratar&body=OI"
+        title="Enviar um email para Pedro">pedrob_hoffmann@outlook.com</a>
+    </div>
+
   </header>
   <aside>
     <h2>Sobre</h2>
-    <article>
       <h3>Objetivos</h3>
+      <article>
       <p>Sou auxiliar de cozinha em uma hamburgueria e me apaixonei pelo mundo do desenvolvimento com influência do meu
         irmão. E quero virar um <strong>dev</strong>.</p>
       <p>Estou estudando programação <strong>Full Stack na Digital House</strong> e gostaria de uma oportunidade para
@@ -33,7 +38,7 @@
       <h2>Habilidades</h2>
       <article>
         <h3>Hard Skills</h3>
-        <ul>
+        <ul class="hard">
           <li><strong>Git</strong></li>
           <li><strong>Git Flow</strong></li>
           <li><strong>HTML</strong></li>
@@ -42,7 +47,7 @@
       </article>
       <article>
         <h3>Soft Skills</h3>
-        <ul>
+        <ul class="soft">
           <li><b>Saber se manter em foco mesmo sob pressão.</b></li>
           <li><b>Capacidade de resolver problemas.</b></li>
           <li><b>Pensamento Criativo.</b></li>
@@ -51,60 +56,61 @@
     </section>
     <section>
       <h2>Experiência Profissional</h2>
-      <article>
+      <article class="this">
         <ul>
           <li>
-            <h3>Thi.s_Burguer | Auxiliar de Cozinha</h3>
+            <h3>Thi.s Burguer | Auxiliar de Cozinha</h3>
             <p>
-              <span>2019 - Atual</span>
+              <span class="ano">2019 - Atualmente</span>
             </p>
             Auxiliar de Cozinha em uma hamburgueria em Taboão da Serra, São Paulo.
-
           </li>
-          <li>
-            2019 - 2019
-            Ticket Store LTDA | Assistente de Marketing
-            Ajuda no Marketing da empresa e operador de máquinas digitais.
-          </li>
+      </article>
+      <article class="ticket">
+          <h3>Ticket Store LTDA | Assistente de Marketing</h3>
+          <p><span class="ano">2019 - 2019</span></p>
+          Ajuda no Marketing da empresa e operador de máquinas digitais.
         </ul>
       </article>
     </section>
     <h2>Prêmios e Reconhecimentos</h2>
     <article>
       <section>
-        <ol>Minha mãe dizia que eu era o filho mais bonito de todos e eu tenho irmão</ol>
-        <ol>Prêmio de melhor do melhor do mundo em montar hamburguer</ol>
-        <ol>Embrulho mais rápido de um lanche</ol>
-        <ol>Fã número 1 do Perry o Ornintorrinco</ol>
+        <ol class="reconhecimento-item">
+          <li>Minha mãe dizia que eu era o filho mais bonito de todos e eu tenho irmão.</li>
+          <li>Prêmio de melhor do melhor do mundo em montar hamburguer.</li>
+          <li>Embrulho mais rápido de um lanche.</li>
+          <li>Fã número 1 do Perry o Ornintorrinco.</li>
+        </ol>
       </section>
     </article>
-
     <h2>Formação Acadêmica</h2>
-    <article>
+    <article class="formacao-item">
       <h3>Digital House</h3>
-      <p><small>2021</small>
+      <p><span class="ano">2021</span>
         Programador Web Full Stack</p>
     </article>
-    <article>
+    <article class="formacao-item">
       <h3>Colégio Análise</h3>
-      <p><small>2021</small>
+      <p><span class="ano">2020</span>
         Ensino médio completo</p>
     </article>
-    <article>
+    <article class="formacao-item">
       <h3>Wizard| Curso de inglês</h3>
-      <p><small>2017</small>
+      <p><span class="ano">2017</span>
         Inglês fluente (leitura, escrita e conversação)</p>
     </article>
   </main>
   <footer>
-    <p>
       <strong>Programador Front End Junior</strong>
+      <br>
+      <div>
       <span>Pedro Balan Hoffmann</span>
       <a href="tel:+5511995331489" target="_blank" rel="noopener noreferrer" title="Ligar para Pedro">(11)
         99533-1489</a>
       <a href="mailto:pedrob_hoffmann@outlook.com?subject=Quero%20te%20contratar&body=OI"
         title="Enviar um email para Pedro">pedrob_hoffmann@outlook.com</a>
-    </p>
+      </div>
   </footer>
 </body>
 
