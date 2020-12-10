@@ -1,6 +1,14 @@
 /* RESET */
+:root {
+    --primaria: rgba(135, 206, 250, 1);
+    --bg1:  rgba(246, 246, 246, 1) ;
+    --bg2: rgba(187, 248, 181, 0.5);
+    --bg3:  rgba(181, 191, 248, 0.5);
+}
+
 * {
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     font-size: 16px;
@@ -8,11 +16,12 @@
 }
 
 body {
-    background-color: lightskyblue;
+    background-color: var(--primaria);
+
 }
 
 main {
-    background-color: #f6f6f6;
+    background-color: var(--bg1);
     padding: 50px;
     width: 800px;
     margin: 30px auto;
@@ -42,7 +51,7 @@ header {
 }
 
 aside article {
-    background-color:rgba(181, 191, 248, 0.5);
+    background-color: var(--bg3);
     border-radius: 32px;
     margin-bottom: 16px;
     padding: 24px;
@@ -62,15 +71,24 @@ aside article {
 }
 
 header img {
-    border-radius: 35px;
+    animation: bordaCamaleao 4s infinite;
+    border: 2px solid var(--primaria);
+    border-radius: 50%;
     display: block;
+    transition: transform .8s ease-in-out;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 35px;
     margin-top: 35px;
+    filter:  drop-shadow: (2px 2px 4px rgba(187, 248, 181, 0.5));
     
 }
-header div{
+header img:hover {
+    transform: rotate(360deg) ; 
+
+}
+
+header div {
     display: block;
     text-align: center;
 }
@@ -95,8 +113,11 @@ header span {
 }
 
 h1 {
+    font-family: 'Anton', sans-serif;
     font-size: 46px;
     text-align: center;
+    box-shadow: 2px 2px 4px rgba(187, 248, 181, 0.5);
+    background-color: rgba(181, 194, 248, .2) ;
 }
 
 footer {
@@ -141,44 +162,73 @@ main h3 {
 }
 
 [class*="-item"]:nth-child(odd) {
-    background-color: rgba(187, 248, 181, 0.5);
+    background-color: var(--bg2);
 }
 
 [class*="-item"]:nth-child(even) {
-    background-color: rgba(181, 191, 248, 0.5);
+    background-color: var(--bg3);
 }
+
+a[href*="tel"]::before {
+    content: '\0260E';
+    margin-right: 4px;
+}
+
 .reconhecimento {
-    background-color: rgba(181, 191, 248, 0.5);
+    background-color: var(--bg3);
     border-radius: 32px;
     margin-bottom: 16px;
     padding: 24px;
 }
+
 .hard {
-    background-color:  rgba(187, 248, 181, 0.5);
+    background-color:  var(--bg2);
     border-radius: 32px;
     margin-bottom: 16px;
     padding: 24px;
 }
 
 .soft {
-    background-color:rgba(181, 191, 248, 0.5);
+    background-color: var(--bg3);
     border-radius: 32px;
     margin-bottom: 16px;
     padding: 24px;
 }
+
 .ticket {
-    background-color:rgba(181, 191, 248, 0.5);
+    background-color: var(--bg3);
     border-radius: 32px;
     margin-bottom: 16px;
     padding: 24px;
 }
+
 .this {
-    background-color:  rgba(187, 248, 181, 0.5);
+    background-color:  var(--bg2);
     border-radius: 32px;
     margin-bottom: 16px;
     padding: 24px;
 }
-footer div{
+
+footer div {
     display: block;
     text-align: center;
+}
+
+}
+@keyframes bordaCamaleao {
+    0% {
+        border: 2px solid lightskyblue;
+    }
+    25% {
+        border: 2px solid paleturquoise;
+    }
+    50% {
+        border: 2px solid palevioletred;
+    }
+    75% {
+        border: 2px solid palegreen;
+    }
+    100% {
+        border: 2px solid palegoldenrod;
+    }
 }
