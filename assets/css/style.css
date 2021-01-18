@@ -162,11 +162,11 @@ main h3 {
 }
 
 [class*="-item"]:nth-child(odd) {
-    background-color: var(--bg2);
+    background-color: var(--bg3);
 }
 
 [class*="-item"]:nth-child(even) {
-    background-color: var(--bg3);
+    background-color: var(--bg2);
 }
 
 a[href*="tel"]::before {
