@@ -261,3 +261,23 @@ footer div {
         border: 2px solid palegoldenrod;
     }
 }
+
+@media screen and (-webkit-min-device-pixel-ratio: 2.0) and (-webkit-max-device-pixel-ratio: 3.0) and (max-width: 640px),
+(max-width:640px) {
+
+    header {
+
+        margin-left: 14%;
+    }
+
+    aside,
+    main {
+        margin-left: 43%;
+    }
+
+    footer {
+        width: 1000px;
+        margin-left: 6%;
+    }
+
+}
